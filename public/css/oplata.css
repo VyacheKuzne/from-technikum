@@ -1,0 +1,220 @@
+.main_conteiner_delivery{
+    width: 30%;
+    padding: 2.25vw;
+}
+
+.conteiner_delivery_input{
+    width: 100%;
+}
+
+.delivery_input_street{
+    width: 100%;
+}
+.delivery_input_info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+input:not(.header-menu__searth-form_input){
+   height: 2.2vw;
+   border: 1px solid rgba(64, 64, 64, 1);
+   padding-left: 0.6vw;
+   border-radius: 0.25vw;
+   margin-top: 10px;
+}
+input:not(.header-menu__searth-form_input):hover{
+    border: 2px solid  rgba(255, 210, 45, 1) ;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 3vw;
+    padding-left: 0.6vw;
+    border-radius: 0.25vw;
+    margin-top: 10px;
+}
+.conteiner_delivery_btn{
+    height: 2vw;
+    display: flex;
+   
+}
+.main_oplata_conteiner{
+    position: fixed;
+    right: 25vw;
+    top: 15vw
+}
+.btn_card{
+    width: auto;
+    height: 2vw;
+    border-radius: 0.25vw;
+    border: 1px solid rgba(64, 64, 64, 1);
+    color: rgba(64, 64, 64, 1);
+    background-color: white;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.btn_card>span{
+    display: flex;
+    align-items: center;
+}
+.btn_card>span:hover{
+   text-decoration: underline;
+}
+.btn_nal{
+    border-radius: 0.25vw;
+    border: 1px solid rgba(64, 64, 64, 1);
+    color: rgb(255, 255, 255);
+    background-color: rgba(64, 64, 64, 1);
+    margin-left: 10px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+.btn_nal:hover{
+    text-decoration: underline;
+}
+.oplata_conteiner_info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.conteiner_plata_btn{
+    width: auto;
+    height: auto;
+    padding: 14px;
+    background-color: rgba(255, 210, 45, 1);
+    border-radius: 0.25vw;
+    border: none;
+}
+.conteiner_plata_btn:hover{
+    text-decoration: underline;
+}
+.itog-price{
+    font-weight: bold;
+}
+
+.main_order_conteiner{
+    width: auto;
+    padding-left: 1%;
+}
+.order_list{
+    display: flex;
+}
+.list_img{
+    width: 150px;
+    height: 120px;
+    background-color: grey;
+}
+.list_description{
+    display: flex;
+    width: auto;
+    height: 30%;
+}
+.description_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    background-color:rgba(64, 64, 64, 1);
+    color: white;
+    border-radius: 0.25vw;
+    font-size: 20px;
+}
+.description_btn>button:hover{
+    color: rgba(255, 210, 45, 1);
+}
+.description-add{
+    width: auto;
+    height: auto;
+    padding: 10%;
+    background-color:rgba(64, 64, 64, 1);
+    color: white;
+    border: none;
+    font-size: 24px;
+}
+.description-deduct{
+    width: auto;
+    height: auto;
+    padding: 10%;
+    background-color:rgba(64, 64, 64, 1);
+    color: white;
+    border: none;
+    font-size: 24px;
+
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение с прозрачностью */
+    backdrop-filter: blur(5px); /* Размытие заднего фона */
+    display: none;
+    z-index: 90;
+}
+#oplata {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 210, 45, 1);
+    display: none;
+    z-index: 100;
+    flex-direction: column;
+    border-radius: 0.25vw;
+    padding: 3%;
+    align-items: center;
+    text-align: center;
+}
+#oplata>img{
+    position: relative;
+}
+#oplata>span:nth-of-type(2){
+    top: 40%;
+    position: absolute;
+}
+#oplata>span{
+    font-size: 24px;
+}
+#oplata>span:nth-of-type(1){
+    top: 30%;
+    position: absolute;
+}
+#oplata>button{
+    top: 50%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color:rgba(64, 64, 64, 1);
+    padding: 15px;
+    border-radius: 0.25vw;
+    border:  none;
+    color: white;
+}
+/* #closeSettings {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 20px;
+    color:red;
+}
+
+#exit{
+  background-color: red;
+  color: #FFFFFF;
+  width: 100%;
+  height: 40px;
+  color: white;
+  border-radius: 0 0 0.25vw 0.25vw;
+} */
+
+
