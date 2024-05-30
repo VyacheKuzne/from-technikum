@@ -20,7 +20,7 @@
                 <td>password</td>
             </tr>
          
-            @foreach($user_clients  as $elem)
+                @foreach($user_clients  as $elem)
                     <tr>    
                         
                         <td>{{  $elem ->id  }}   </td> 

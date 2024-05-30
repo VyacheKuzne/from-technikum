@@ -32,7 +32,7 @@ Route::get('/', function () {
 // })->name('register');
 
 Route::name('log_in.')->group(function () {
-    Route::view('/index', 'pages.index')->middleware('auth')->name('index');
+    Route::get('/index', [UserController::class, 'index'])->middleware('auth')->name('index');
     Route::get('/login', function () {
         if (Auth::check()) {
             return redirect(route('log_in.index'));
