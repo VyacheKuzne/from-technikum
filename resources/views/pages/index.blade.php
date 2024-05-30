@@ -119,126 +119,32 @@
                 <h1>Популярные ретостораны</h1>
                 <span>Мы собрали для вас наиболее популярные рестораны </span>
                 <div class="popularity-place_card-of-tovar">
+                <h1>Популярные ретостораны</h1>
+                <span>Мы собрали для вас наиболее популярные рестораны </span>
+                @foreach($restoran  as $elem)
+                <div class="popularity-place_conteiner">
+                <div class="popularity-place_card-of-tovar">
                     <div class="popularity_place_card" id="1">
                         <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
+                        <img src="/storage/img/{{ $elem->image }}" alt="main_img">
                             <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
+                                <img src="../img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
                                 <span>20-30 минут</span>
                             </div>
                         </div> 
                         <span class="card_blok-cost">$$$$$</span>
-                            <span class="card_blok-name">Бухара</span>  
+                            <span class="card_blok-name">{{$elem -> name}}</span>  
                             <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
+                                <img src="../img/Main page/Star 1.png" alt="star">
                                 <span>4.7</span> <span> (2099)</span>
                             </span>                   
                     </div>
-                    <div class="popularity_place_card"id="2">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span>
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>  
+                 
                     </div>
-                    <div class="popularity_place_card" id="3">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span>
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>  
-                    </div>
-                    <div class="popularity_place_card" id="4">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span>
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>   
-                    </div>
-                    <div class="popularity_place_card" id="5">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span>
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>   
-                    </div>
-                    <div class="popularity_place_card" id="6">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span> 
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>  
-                    </div>
-                    <div class="popularity_place_card" id="7">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span>        
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>                             
-                    </div>
-                    <div class="popularity_place_card" id="8">
-                        <div class="popularity-place_card_img card-img">
-                            <img src="img/Main page/image 4.png" alt="main_img">
-                            <div class="card_block">
-                                <img src="img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
-                                <span>20-30 минут</span>
-                            </div>
-                        </div>
-                        <span class="card_blok-name">Бухара</span>    
-                        <span class="card_blok-cost">$$$$$</span>
-                            <span class="card_blok-name otziv">
-                                <img src="img/Main page/Star 1.png" alt="star">
-                                <span>4.7</span> <span> (2099)</span>
-                            </span>  
-                    </div>
+                </div>
+            </div>
+
+                 @endforeach
                 </div>
             </div>
          

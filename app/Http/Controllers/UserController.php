@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User_client;
+use App\Models\restoran;
 use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
@@ -32,6 +33,10 @@ class UserController extends Controller
         'forError' => 'Ошибка при регистрации'
     ]);
 }
-
+public function index(Request $req){
+    $restoran = restoran::orderBy('id', 'asc')->get();
+    $data = []; // инициализируйте $data
+    return view('pages.index', compact('restoran', 'data'));
+}
 
 }

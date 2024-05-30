@@ -23,7 +23,7 @@
                 <div class="popularity-place_card-of-tovar">
                     <div class="popularity_place_card" id="1">
                         <div class="popularity-place_card_img card-img">
-                            <img src="../img/Main page/image 4.png" alt="main_img">
+                        <img src="/storage/img/{{ $elem->image }}" alt="main_img">
                             <div class="card_block">
                                 <img src="../img/Main page/walk_esmyx4cimsxx 1.png" alt="person">
                                 <span>20-30 минут</span>

@@ -17,8 +17,7 @@ return new class extends Migration
             $table-> string('adres');
             $table -> string ('INN');
             $table -> string ('otziv');
-            $table -> string ('img');
-            $table->string('name_img');
+            $table -> string ('image');
             $table->timestamps();
         
         });

@@ -8,7 +8,7 @@
 <body>
 <a href="{{Route('admin.restoran')}}">БАЗА РЕСТОРАН</a>
 
-    <form action="{{Route('admin.create_restoran')}}" method ='post'>
+    <form action="{{Route('admin.create_restoran')}}" method ='post' enctype="multipart/form-data">
     @csrf
     name:
     <input type="text" name ="name">
@@ -19,7 +19,13 @@
     otziv:
     <input type="text" name ="otziv">    
     картинка 
-    <input type="file" class="form-control-file" id="image" name="image">
+
+    <input type="file" name = 'images'>
+
+    @isset ($path)
+    <img src="{{asset('/image/'. $path)}}" alt="">
+    @endisset
+
     <button type="submit">добавление нового ресторана</button>  
     </form>
 </body>
